@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz html - Szkolenie</title>
+</head>
+
+<body>
+    <div>
+        Imię: <br>
+        <input type="text" name="Imię" placeholder="Wpisz swoje imię"><br /><br /> Nazwisko: <br>
+        <input type="text" name="Nazwisko" placeholder="Wpisz swoje nazwisko"><br /><br /> Email: <br>
+        <input type="text" name="Email" placeholder="Twój email"><br /><br /> Telefon: <br>
+        <input type="text" name="Telefon" placeholder="Twój telefon"><br /><br />
+
+        <p>Wybór miasta</p>
+        <select name="Miasta">
+	<option value="selected">Kraków</option>
+	<option>Warszawa</option>
+	<option>Gdańsk</option>
+	<option>Opole</option>
+    </select>
+
+        <p>Podaj swoją płeć:</p>
+        <input type="radio" name="Płeć" value="Kobieta" />Kobieta
+        <input type="radio" name="Płeć" value="Mężczyzna" />Mężczyzna
+
+        <label><p></p><input type="checkbox">Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji na szkolene.</label>
+
+        <p>Wiadomość</p>
+        <textarea name="Wiadomość" cols="50" rows="10"></textarea>
+        <br /><br />
+        <form action="https://formspree.io/v.dagmara@icloud.com" method="POST"></form>
+        <input type="submit" value="Wyślij wiadomość" />
+    </div>
+</body>
+
+</html>
